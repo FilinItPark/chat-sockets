@@ -22,6 +22,7 @@ public class ChatController {
         return chatService.getList();
     }
 
+
     @GetMapping("/{id}")
     public Chat getOne(@PathVariable UUID id) {
         return chatService.getOne(id);
